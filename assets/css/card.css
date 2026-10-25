@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    src: url('../fonts/Inter/static/Inter_18pt-Regular.ttf ');
+}
+
+
+body {
+    background-color: violet;
+    padding: 200px;
+    font-family: Inter, sans-serif;
+}
+
+.product-card {
+    padding: 15px;
+    background-color: white;
+    height: 500px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    justify-content: space-between;
+}
+
+.product-card__image {
+    border-radius: 20px;
+}
+
+.product-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+}
+
+.product-card__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.product-card__title {
+    display: flex;
+    justify-content: space-between;
+}
+.product-card__item-name {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.product-card__price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-card__description {
+    letter-spacing: -1%;
+    font-size: 16px;
+    color: #505050;
+}
+
+.product-card__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-card__stepper-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 17px;
+    align-items: center;
+}
+
+.stepper-button {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+}
+
+.increment-stepper-button {
+    background-image: url("../images/Inc.png");
+}
+
+.decrement-stepper-button {
+    background-image: url("../images/Decr.png");
+}
+
+.items-count {
+    font-size: 20px;
+}
+
+.purchase-button {
+    background-color: black;
+    border-radius: 24.5px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.purchase-button:before {
+    content: url("../images/Icon.png");
+    margin-right: 14px;
+    height: 22px;
+    width: 22px;
+}
